@@ -1,0 +1,19 @@
+# 1. OS Files
+.DS_Store
+
+# 2. Python & Environments
+__pycache__/
+*.pyc
+venv/
+env/
+
+# 3. Backend Secrets & Database Files (CRITICAL)
+.env
+.env.example
+*.json
+chroma_db/
+backend/chroma_db/
+backend/temp_uploads/
+
+# 4. Frontend Secrets
+env.js
