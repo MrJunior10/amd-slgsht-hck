@@ -7,6 +7,8 @@ pydantic
 firebase-admin
 python-dotenv
 phidata
-openai
-groq
 duckduckgo-search
+langchain-community
+sentence-transformers
+pypdf
+openai
