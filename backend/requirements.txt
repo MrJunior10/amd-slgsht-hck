@@ -8,3 +8,5 @@ firebase-admin
 python-dotenv
 phidata
 openai
+groq
+duckduckgo
