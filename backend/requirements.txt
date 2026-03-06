@@ -6,3 +6,4 @@ chromadb
 pydantic
 firebase-admin
 python-dotenv
+phidata
