@@ -13,3 +13,5 @@ sentence-transformers
 pypdf
 openai
 groq
+langchain-chromadb
+

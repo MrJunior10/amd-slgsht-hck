@@ -4,7 +4,6 @@ from phi.model.groq import Groq
 from phi.tools.duckduckgo import DuckDuckGo
 import yaml
 import os
-print("DEBUG OPENAI_API_KEY:", repr(os.getenv("OPENAI_API_KEY")))
 
 
 class StudyAgents:
