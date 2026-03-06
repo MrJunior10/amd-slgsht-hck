@@ -10,6 +10,23 @@ from dotenv import load_dotenv
 from agent_handler import StudyAssistantHandler
 from database import DatabaseManager
 
+import json
+import firebase_admin
+from firebase_admin import credentials
+
+# Get the JSON string from Render's environment variables
+firebase_json = os.getenv("FIREBASE_CONFIG_JSON")
+
+if firebase_json:
+    # Parse the string back into a dictionary
+    cred_dict = json.loads(firebase_json)
+    cred = credentials.Certificate(cred_dict)
+    firebase_admin.initialize_app(cred)
+else:
+    # Fallback for local testing
+    cred = credentials.Certificate("firebase_credentials.json")
+    firebase_admin.initialize_app(cred)
+
 load_dotenv()
 
 app = FastAPI(title="Agentic Study.ai API")
